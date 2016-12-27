@@ -1,3 +1,65 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-layout>
+  <div class="menuIcons">
+      <i class="material-icons"  (click)="menu.open()">menu</i>
+      <i class="material-icons">home</i>
+      <i class="material-icons">search</i>
+      <i class="material-icons">account_circle</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">book</i>
+      <i class="material-icons">shopping_cart</i>
+      <i class="material-icons">account_balance</i>
+      <i class="material-icons">local_library</i>
+  </div>
+  <md-sidenav align="start" #menu class="wide">
+    <ul>
+      <li *ngFor="let m of MenuIcons"> {{m}} </li>
+    </ul>
+  </md-sidenav>
+</md-sidenav-layout>
+  <h1>Welcome To MyLibrary
+    <button md-mini-fab> Menu </button>
+  </h1>
+  <p>
+    As our programs grow in size, we often find that different parts of the app need to communicate with other modules.
+    When module A requires module B to run, we say that B is a dependency of A.
+    One of the most common ways to get access to dependencies is to simply import a file.
+    For instance, in this hypothetical module we might do the following:
+    In many cases, simply importing other code is sufficient. 
+    However there are times where we need to provide dependencies in a more sophisticated way. 
+    For instance: What if we wanted to substitute out the implementation of B for MockB during testing?
+    What if we wanted to share a single instance of the B class across our whole app?
+    What if we wanted to create a new instance of the B class every time it was used?
+  </p>
+    <p>
+    As our programs grow in size, we often find that different parts of the app need to communicate with other modules.
+    When module A requires module B to run, we say that B is a dependency of A.
+    One of the most common ways to get access to dependencies is to simply import a file.
+    For instance, in this hypothetical module we might do the following:
+    In many cases, simply importing other code is sufficient. 
+    However there are times where we need to provide dependencies in a more sophisticated way. 
+    For instance: What if we wanted to substitute out the implementation of B for MockB during testing?
+    What if we wanted to share a single instance of the B class across our whole app?
+    What if we wanted to create a new instance of the B class every time it was used?
+  </p>
+    <p>
+    As our programs grow in size, we often find that different parts of the app need to communicate with other modules.
+    When module A requires module B to run, we say that B is a dependency of A.
+    One of the most common ways to get access to dependencies is to simply import a file.
+    For instance, in this hypothetical module we might do the following:
+    In many cases, simply importing other code is sufficient. 
+    However there are times where we need to provide dependencies in a more sophisticated way. 
+    For instance: What if we wanted to substitute out the implementation of B for MockB during testing?
+    What if we wanted to share a single instance of the B class across our whole app?
+    What if we wanted to create a new instance of the B class every time it was used?
+  </p>
+    <p>
+    As our programs grow in size, we often find that different parts of the app need to communicate with other modules.
+    When module A requires module B to run, we say that B is a dependency of A.
+    One of the most common ways to get access to dependencies is to simply import a file.
+    For instance, in this hypothetical module we might do the following:
+    In many cases, simply importing other code is sufficient. 
+    However there are times where we need to provide dependencies in a more sophisticated way. 
+    For instance: What if we wanted to substitute out the implementation of B for MockB during testing?
+    What if we wanted to share a single instance of the B class across our whole app?
+    What if we wanted to create a new instance of the B class every time it was used?
+  </p>

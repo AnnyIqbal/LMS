@@ -1,0 +1,8 @@
+.menuIcons {
+    display: flex;
+    flex-direction: column;
+}
+.wide {
+    height: 500px;
+    width: 4em;
+}
