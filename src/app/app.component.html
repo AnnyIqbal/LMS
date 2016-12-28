@@ -1,24 +1,24 @@
-<md-sidenav-layout>
+    <div class="flex">
+
   <div class="menuIcons">
-      <i class="material-icons"  (click)="menu.open()">menu</i>
-      <i class="material-icons">home</i>
+      <i class="material-icons" (click)="menu.toggle()">menu</i>
+      <i class="material-icons" *ngFor="let i of icons"> {{i}} </i> 
+      <!--<i class="material-icons">home</i>
       <i class="material-icons">search</i>
       <i class="material-icons">account_circle</i>
       <i class="material-icons">person</i>
       <i class="material-icons">book</i>
+      <i class="material-icons">add_shopping_cart</i>
+      <i class="material-icons">favorite</i>
+      <i class="material-icons">star_rate</i>
       <i class="material-icons">shopping_cart</i>
       <i class="material-icons">account_balance</i>
       <i class="material-icons">local_library</i>
+      <i class="material-icons">location_on</i>-->
   </div>
-  <md-sidenav align="start" #menu class="wide">
-    <ul>
-      <li *ngFor="let m of MenuIcons"> {{m}} </li>
-    </ul>
-  </md-sidenav>
-</md-sidenav-layout>
-  <h1>Welcome To MyLibrary
-    <button md-mini-fab> Menu </button>
-  </h1>
+  <div>
+<md-sidenav-container>
+<h1>Welcome To MyLibrary</h1>
   <p>
     As our programs grow in size, we often find that different parts of the app need to communicate with other modules.
     When module A requires module B to run, we say that B is a dependency of A.
@@ -63,3 +63,11 @@
     What if we wanted to share a single instance of the B class across our whole app?
     What if we wanted to create a new instance of the B class every time it was used?
   </p>
+  <md-sidenav align="start" #menu class="wide">
+    <ul class="noDecor">
+      <li *ngFor="let m of MenuIcons"> {{m}} </li>
+    </ul>
+  </md-sidenav>
+</md-sidenav-container>
+  </div>
+    </div>
