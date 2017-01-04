@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {ActivatedRoute, Router} from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,4 +11,9 @@ export class AppComponent {
   icons: string[] = [
     'home', 'search', 'person', 'book', 'add_shopping_cart', 'favorite', 'shopping_cart', 'account_balance', 'location_on'
   ];
+
+  constructor(private r: Router, private ar: ActivatedRoute){}
+  routeTo(x) {
+    this.r.navigate([x]);
+  }
 }

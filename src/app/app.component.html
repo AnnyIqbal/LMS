@@ -1,8 +1,7 @@
-    <div class="flex">
-
+<div class="flex">
   <div class="menuIcons">
       <i class="material-icons" (click)="menu.toggle()">menu</i>
-      <i class="material-icons" *ngFor="let i of icons"> {{i}} </i> 
+      <i class="material-icons" *ngFor="let i of icons" (click)="routeTo(i)"> {{i}} </i> 
       <!--<i class="material-icons">home</i>
       <i class="material-icons">search</i>
       <i class="material-icons">account_circle</i>
@@ -17,57 +16,15 @@
       <i class="material-icons">location_on</i>-->
   </div>
   <div>
-<md-sidenav-container>
-<h1>Welcome To MyLibrary</h1>
-  <p>
-    As our programs grow in size, we often find that different parts of the app need to communicate with other modules.
-    When module A requires module B to run, we say that B is a dependency of A.
-    One of the most common ways to get access to dependencies is to simply import a file.
-    For instance, in this hypothetical module we might do the following:
-    In many cases, simply importing other code is sufficient. 
-    However there are times where we need to provide dependencies in a more sophisticated way. 
-    For instance: What if we wanted to substitute out the implementation of B for MockB during testing?
-    What if we wanted to share a single instance of the B class across our whole app?
-    What if we wanted to create a new instance of the B class every time it was used?
-  </p>
-    <p>
-    As our programs grow in size, we often find that different parts of the app need to communicate with other modules.
-    When module A requires module B to run, we say that B is a dependency of A.
-    One of the most common ways to get access to dependencies is to simply import a file.
-    For instance, in this hypothetical module we might do the following:
-    In many cases, simply importing other code is sufficient. 
-    However there are times where we need to provide dependencies in a more sophisticated way. 
-    For instance: What if we wanted to substitute out the implementation of B for MockB during testing?
-    What if we wanted to share a single instance of the B class across our whole app?
-    What if we wanted to create a new instance of the B class every time it was used?
-  </p>
-    <p>
-    As our programs grow in size, we often find that different parts of the app need to communicate with other modules.
-    When module A requires module B to run, we say that B is a dependency of A.
-    One of the most common ways to get access to dependencies is to simply import a file.
-    For instance, in this hypothetical module we might do the following:
-    In many cases, simply importing other code is sufficient. 
-    However there are times where we need to provide dependencies in a more sophisticated way. 
-    For instance: What if we wanted to substitute out the implementation of B for MockB during testing?
-    What if we wanted to share a single instance of the B class across our whole app?
-    What if we wanted to create a new instance of the B class every time it was used?
-  </p>
-    <p>
-    As our programs grow in size, we often find that different parts of the app need to communicate with other modules.
-    When module A requires module B to run, we say that B is a dependency of A.
-    One of the most common ways to get access to dependencies is to simply import a file.
-    For instance, in this hypothetical module we might do the following:
-    In many cases, simply importing other code is sufficient. 
-    However there are times where we need to provide dependencies in a more sophisticated way. 
-    For instance: What if we wanted to substitute out the implementation of B for MockB during testing?
-    What if we wanted to share a single instance of the B class across our whole app?
-    What if we wanted to create a new instance of the B class every time it was used?
-  </p>
-  <md-sidenav align="start" #menu class="wide">
-    <ul class="noDecor">
-      <li *ngFor="let m of MenuIcons"> {{m}} </li>
-    </ul>
-  </md-sidenav>
-</md-sidenav-container>
+    <md-sidenav-container>
+      <div class="container">
+        <router-outlet></router-outlet>
+      </div>
+      <md-sidenav align="start" #menu class="wide">
+        <ul class="noDecor">
+          <li *ngFor="let m of MenuIcons"> {{m}} </li>
+        </ul>
+      </md-sidenav>
+    </md-sidenav-container>
   </div>
-    </div>
+</div>
