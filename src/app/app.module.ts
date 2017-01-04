@@ -17,7 +17,7 @@ import { LibraryComponent } from './library/library.component';
 import { LocatorComponent } from './locator/locator.component';
 
 const routes: Routes =[
-  // { path: '', pathMatch: 'full', redirectTo: HomeComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: 'home', component: HomeComponent },
   { path: 'search', component: SearchComponent },
   { path: 'person', component: UserComponent },
