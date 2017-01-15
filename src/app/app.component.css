@@ -27,3 +27,22 @@
 .container {
     margin-left: 20px;
 }
+.header {
+    display: inline-flex;
+    width: 95vw;
+    height: 5vh;
+    background-color: springgreen;
+}
+.heading, .logo, .user {
+    flex-wrap: nowrap;
+}
+.logo {
+    height: 100px;
+    width: 100px;
+}
+.user {
+    margin-left: 55em;
+}
+.heading {
+    margin-left: 2em;
+}
